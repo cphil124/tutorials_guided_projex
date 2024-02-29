@@ -22,7 +22,7 @@ def gen_data():
 
 if __name__ == '__main__':
     gen_data()
-    schedule.every(10).seconds.do(gen_data)
+    schedule.every(5).seconds.do(gen_data)
 
     while True:
         schedule.run_pending()
